@@ -5,15 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulación del DOM Basico leyendo html</title>
+    <link rel="stylesheet" href="/Curso_Web_Developer_Platzi/Eventos JS InterConUsuarios/style.css">
 </head>
 <body>
-    <h1>Manipulación del DOM</h1>
-    
-    <input id="calculo1" placeholder="Escribe algo aquí">
-    <input id="calculo2" placeholder="Escribe algo aquí">
-    <button id="btncalcular" onclick="SumarProductos()">Calcular</button>
-    <p id="resultado"></p>
-    <script src="/Curso_Web_Developer_Platzi/Eventos JS InterConUsuarios/script.js"></script> 
+    <section>
+        <div class="title">
+            <h1>Manipulación del DOM</h1>
+            <p>En esta puebas podrás realizar sumas, restas, multiplicaciones y divisiones</p>
 
+        </div>
+        
+        <div class="SumaProducto">
+            <h2>Suma</h2>
+            <input  id="suma1" placeholder="Valor 1" type="number">
+            <input id="suma2" placeholder="Valor 2" type="number">
+            <button onclick="SumandoValores()">Sumar</button>
+            <div>
+                <p id="ProductoSuma"></p>
+            </div>
+        </div>
+
+        <div class="RestaProducto">
+            <h2>Resta</h2>
+            <input id="resta1" placeholder="Valor 1" type="number">
+            <input id="resta2" placeholder="Valor 2" type="number">
+            <button onclick="RestaValores()">Restar</button>
+            <div>
+                <p id="ProductoResta"></p>
+            </div>
+        </div>
+
+        <div class="DivisionProducto">
+            <h2>División</h2>
+            <input id="division1" placeholder="Valor 1" type="number">
+            <input id="division2" placeholder="Valor 2" type="number">
+            <button onclick="DivisionValores()">Dividir</button>
+            <div>
+                <p id="ProductoDivision"></p>
+            </div>
+        </div>
+
+        <div class="MultiplicadorProducto">
+            <h2>Multiplicación</h2>
+            <input id="multiplicacion1" placeholder="Valor 1" type="number">
+            <input id="multiplicacion2" placeholder="Valor 2" type="number">
+            <button onclick="MultiplicadorValores()">Multiplicar</button>
+            <div>
+                <p id="Productomultiplicador"></p>
+            </div>
+        </div>
+    </section>
+    <script src="/Curso_Web_Developer_Platzi/Eventos JS InterConUsuarios/script.js"></script>           
 </body>
 </html>
